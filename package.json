@@ -1,0 +1,25 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "main": "app.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hearty22/PortFolio.git"
+  },
+  "author": "hearty_22",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hearty22/PortFolio/issues"
+  },
+  "homepage": "https://github.com/hearty22/PortFolio#readme",
+  "description": "",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.1",
+    "express": "^5.1.0"
+  }
+}

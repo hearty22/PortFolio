@@ -5,7 +5,21 @@ import { Crosshair } from 'lucide-react'; // Asegúrate de tener lucide-react in
 
 const About = () => {
   return (
-    <section id="sobre mi" className="py-24 px-6 relative bg-[#080808] overflow-hidden">
+    <section id="sobre mi"  className="py-24 px-6 relative bg-[#080808] overflow-hidden">
+       {/* --- FONDO CON BLUR Y OSCURIDAD --- */}
+      <div className="absolute inset-0 z-0">
+        {/* 1. La Imagen de fondo */}
+        <div 
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          style={{ 
+            backgroundImage: "url('https://i.pinimg.com/1200x/b0/52/8e/b0528e0b70e29a5efbafcc267869e4d6.jpg')",
+            filter: "blur(2px) brightness(0.3)" /* Aquí controlas el desenfoque y la oscuridad */
+          }}
+        ></div>
+        
+        {/* 2. Capa extra de color negro para asegurar legibilidad (opcional pero recomendado) */}
+        <div className="absolute inset-0 bg-black/60"></div>
+      </div>
       <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-5 gap-16 items-center relative z-10">
         
         {/* --- COLUMNA IZQUIERDA: TEXTO (Ocupa 3/5 del espacio) --- */}
@@ -20,7 +34,7 @@ const About = () => {
           <div className="absolute -left-[9px] top-0 w-4 h-4 bg-blood rounded-full blur-[2px] animate-pulse"></div>
           
           <h2 className="text-4xl font-serif text-bone mb-6 tracking-wide">
-            Sobre mi,<span className="text-blood"> Facundo Escalante.</span>
+            <span className="text-blood">Sobre mi:</span>
           </h2>
           
           <div className="text-gray-400 mb-8 leading-relaxed font-mono text-sm md:text-base space-y-6">
@@ -29,7 +43,7 @@ const About = () => {
               Soy un Desarrollador <span className="text-gold">Full Stack</span>, enfocado en una sola cosa: resolver problemas reales a través del código. Por ahora cuento con pocos proyectos, uno de ellos es una herramienta enfocada en la ayuda a docentes, "GENKI!", contando con herramientas centralizadas a las tareas de un docente
             </p>
             <p>
-              Me muevo con fluidez entre el Frontend y el Backend. Utilizo <span className="text-bone font-bold">React</span> para construit interfaces reactivas y modernas, y <span className="text-bone font-bold">Node.js</span> para asegurar que los datos fluyan de manera segura y eficiente.
+              Me muevo con fluidez entre el Frontend y el Backend. Utilizo <span className="text-bone font-bold">React</span> para construit interfaces reactivas y modernas, y <span className="text-bone font-bold">Node.js</span> para asegurar que los datos fluyan de manera segura y eficiente. Cuento con conocimientos y experiencia en metodologias agiles para un mejor desempeño en equipo con otros desarrolladores
 
             </p>
           </div>
@@ -68,7 +82,7 @@ const About = () => {
               {/* LA FOTO REAL */}
               {/* Asegúrate de que tu foto esté en public/profile.jpg */}
               <img 
-                src="/profile.jpg" 
+                src="../../public/71af831f-f360-4ea3-8134-70574ae39da1.jpeg" 
                 alt="Profile picture of the developer" 
                 className="w-full h-full object-cover grayscale contrast-125 group-hover:grayscale-0 group-hover:contrast-100 transition-all duration-700 transform group-hover:scale-105"
               />

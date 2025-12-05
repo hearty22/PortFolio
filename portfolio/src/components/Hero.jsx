@@ -11,7 +11,7 @@ const Hero = () => {
       
       {/* Fondo decorativo sutil (Grid o Glow) */}
       <div className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none">
-         <div className="absolute top-[20%] left-[50%] -translate-x-1/2 w-[600px] h-[600px] bg-blood/5 rounded-full blur-[100px]"></div>
+         <div className="absolute top-[20%] left-[50%] -translate-x-1/2 w-[600px] h-[600px] bg-blood/5 rounded-full blur-[50px]"><img src="https://i.pinimg.com/736x/46/14/69/461469a24ab396c5a86841ba931518ac.jpg" alt=""/></div>
       </div>
 
       <div className="text-center z-10 max-w-4xl relative">
@@ -35,7 +35,7 @@ const Hero = () => {
           initial={{ opacity: 0, scale: 0.95 }} 
           animate={{ opacity: 1, scale: 1 }} 
           transition={{ duration: 0.8 }}
-          className="text-xl md:text-7xl lg:text-8xl font-serif font-bold text-bone mb-1 tracking-tight"
+          className="text-5xl md:text-7xl lg:text-8xl font-serif font-bold text-bone mb-1 tracking-tight"
         >
           Escalante Facundo
         </motion.h2>

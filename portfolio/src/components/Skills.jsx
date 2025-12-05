@@ -6,8 +6,8 @@ const skillsData = [
   { title: "React.js", icon: <Code />, level: "Frontend Core", desc: "Component Architecture" },
   { title: "Node.js", icon: <Server />, level: "Backend Logic", desc: "RESTful APIs / Express" },
   { title: "MongoDB", icon: <Database />, level: "Data Persistence", desc: "Schema Design" },
-  { title: "Arch Linux", icon: <Terminal />, level: "Environment", desc: "Bash / Hyprland Config" },
-  { title: "Pentesting", icon: <Shield />, level: "Security Basics", desc: "Nmap / Gobuster" },
+  { title: "Linux", icon: <Terminal />, level: "Environment", desc: "Server management, Scripting, etc" },
+  { title: "Pentesting", icon: <Shield />, level: "Security Basics", desc: "Nmap, Gobuster, JackTheRipper, etc" },
   { title: "mySQL", icon: <Database />, level: "Data Persistence", desc: "Relational Databases" },
 
 ];

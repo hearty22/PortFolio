@@ -5,7 +5,7 @@ import { Crosshair } from 'lucide-react'; // Asegúrate de tener lucide-react in
 
 const About = () => {
   return (
-    <section id="protocol" className="py-24 px-6 relative bg-[#080808] overflow-hidden">
+    <section id="sobre mi" className="py-24 px-6 relative bg-[#080808] overflow-hidden">
       <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-5 gap-16 items-center relative z-10">
         
         {/* --- COLUMNA IZQUIERDA: TEXTO (Ocupa 3/5 del espacio) --- */}
@@ -20,28 +20,25 @@ const About = () => {
           <div className="absolute -left-[9px] top-0 w-4 h-4 bg-blood rounded-full blur-[2px] animate-pulse"></div>
           
           <h2 className="text-4xl font-serif text-bone mb-6 tracking-wide">
-            THE <span className="text-blood">OPERATOR</span>
+            Sobre mi,<span className="text-blood"> Facundo Escalante.</span>
           </h2>
           
           <div className="text-gray-400 mb-8 leading-relaxed font-mono text-sm md:text-base space-y-6">
             {/* Usando la Opción 1 (Técnica) */}
             <p>
-              Más allá del código, busco el control total. Como usuario nativo de <span className="text-gold">Arch Linux</span>, 
-              entiendo que la eficiencia no es una opción, es una necesidad. Mi flujo de trabajo en Hyprland refleja mi filosofía: 
-              minimalismo visual y máxima funcionalidad.
+              Soy un Desarrollador <span className="text-gold">Full Stack</span>, enfocado en una sola cosa: resolver problemas reales a través del código. Por ahora cuento con pocos proyectos, uno de ellos es una herramienta enfocada en la ayuda a docentes, "GENKI!", contando con herramientas centralizadas a las tareas de un docente
             </p>
             <p>
-              Actualmente cursando la carrera de Desarrollo de Software, fusiono la precisión matemática 
-              con la flexibilidad del <span className="text-bone font-bold">Stack MERN</span>. 
-              No solo construyo aplicaciones; diseño arquitecturas que resisten el caos.
+              Me muevo con fluidez entre el Frontend y el Backend. Utilizo <span className="text-bone font-bold">React</span> para construit interfaces reactivas y modernas, y <span className="text-bone font-bold">Node.js</span> para asegurar que los datos fluyan de manera segura y eficiente.
+
             </p>
           </div>
 
           <div className="flex flex-wrap gap-4 font-mono text-xs text-gold">
             <span className="border border-gold/30 px-3 py-1">FORMOSA, ARG</span>
             <span className="border border-gold/30 px-3 py-1 flex items-center gap-2">
-              <span className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></span>
-              STATUS: ACTIVE
+              <span className="w-2 h-2 bg-green-500 animate-pulse"></span>
+              Edad: 19
             </span>
           </div>
         </motion.div>
@@ -80,7 +77,7 @@ const About = () => {
             {/* Etiquetas técnicas debajo de la foto */}
             <div className="mt-3 flex justify-between text-[10px] font-mono text-gray-500 tracking-widest">
               <span>SUBJECT_ID: DEV_001</span>
-              <span className="text-gold">/// CLASSIFIED</span>
+              
             </div>
           </div>
           

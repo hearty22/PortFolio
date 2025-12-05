@@ -8,16 +8,17 @@ const skillsData = [
   { title: "MongoDB", icon: <Database />, level: "Data Persistence", desc: "Schema Design" },
   { title: "Arch Linux", icon: <Terminal />, level: "Environment", desc: "Bash / Hyprland Config" },
   { title: "Pentesting", icon: <Shield />, level: "Security Basics", desc: "Nmap / Gobuster" },
-  { title: "Calculus", icon: <Layers />, level: "Math Basis", desc: "Derivates / Limits" },
+  { title: "mySQL", icon: <Database />, level: "Data Persistence", desc: "Relational Databases" },
+
 ];
 
 const Skills = () => {
   return (
-    <section id="arsenal" className="py-24 px-6 border-y border-gold/10 bg-[#080808]">
+    <section id="tecnologias" className="py-24 px-6 border-y border-gold/10 bg-[#080808]">
       <div className="max-w-7xl mx-auto">
         <div className="flex items-center gap-4 mb-12">
           <div className="h-px bg-blood flex-1 opacity-40"></div>
-          <h2 className="text-3xl font-serif tracking-widest text-bone">TECHNICAL <span className="text-gold">ARSENAL</span></h2>
+          <h2 className="text-3xl font-serif tracking-widest text-bone"><span className="text-gold">TECNOLOGIAS</span></h2>
           <div className="h-px bg-blood flex-1 opacity-40"></div>
         </div>
 

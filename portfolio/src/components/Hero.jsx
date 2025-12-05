@@ -1,56 +1,91 @@
+
+
+
 import React from 'react';
 import { motion } from 'framer-motion';
+import { ArrowRight, Download } from 'lucide-react';
 
 const Hero = () => {
   return (
-    <section className="relative min-h-screen flex flex-col justify-center items-center px-6 pt-20 border-b border-gold/10">
-      {/* Decoración Técnica Izquierda */}
-      <div className="absolute top-1/4 left-10 text-gold/30 font-mono text-xs flex flex-col gap-2 hidden md:flex">
-        <span>COORDS: 26.18° S, 58.17° W</span>
-        <span>LOC: FORMOSA, ARG</span>
-        <span>SYS: ARCH_LINUX // HYPRLAND</span>
-      </div>
+    <section className="relative min-h-screen flex flex-col justify-center items-center px-6 pt-20 border-b border-gold/10 overflow-hidden">
       
-      <div className="text-center z-10 max-w-5xl">
-        <motion.p 
-          initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }}
-          className="text-blood font-mono tracking-[0.5em] text-sm mb-4 font-bold uppercase"
-        >
-          System Online // Multiplatform Dev
-        </motion.p>
+      {/* Fondo decorativo sutil (Grid o Glow) */}
+      <div className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none">
+         <div className="absolute top-[20%] left-[50%] -translate-x-1/2 w-[600px] h-[600px] bg-blood/5 rounded-full blur-[100px]"></div>
+      </div>
+
+      <div className="text-center z-10 max-w-4xl relative">
         
-        <motion.h1 
-          initial={{ opacity: 0, scale: 0.9 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.8 }}
-          className="text-5xl md:text-8xl font-serif font-bold text-bone mb-6 leading-tight relative"
+        {/* Badge de Estado: Disponible */}
+        <motion.div 
+          initial={{ opacity: 0, y: -20 }} 
+          animate={{ opacity: 1, y: 0 }} 
+          transition={{ duration: 0.5 }}
+          className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-green-900/50 bg-green-900/10 text-green-400 text-xs font-mono mb-8 tracking-widest"
         >
-          <span className="relative inline-block">
-            FULL STACK
-            <span className="absolute -top-4 -right-6 text-gold text-2xl animate-pulse">✦</span>
+          <span className="relative flex h-2 w-2">
+            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
+            <span className="relative inline-flex rounded-full h-2 w-2 bg-green-500"></span>
           </span>
-          <br />
-          <span className="text-transparent bg-clip-text bg-gradient-to-b from-bone to-gray-600">
-            DEVELOPER
-          </span>
-        </motion.h1>
+          AVAILABLE FOR WORK
+        </motion.div>
+        
+        {/* TU NOMBRE (Reemplaza [TU NOMBRE] con tu nombre real) */}
+        <motion.h2 
+          initial={{ opacity: 0, scale: 0.95 }} 
+          animate={{ opacity: 1, scale: 1 }} 
+          transition={{ duration: 0.8 }}
+          className="text-xl md:text-7xl lg:text-8xl font-serif font-bold text-bone mb-1 tracking-tight"
+        >
+          Escalante Facundo
+        </motion.h2>
+
+        {/* TU ROL */}
+        <motion.h2
+          initial={{ opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.2 }} 
+          className="text-xl md:text-3xl font-display text-transparent bg-clip-text bg-gradient-to-r from-gold via-yellow-200 to-gold mb-8"
+        >
+          FULL STACK DEVELOPER
+        </motion.h2>
 
         <motion.div 
-           initial={{ width: 0 }} animate={{ width: "8rem" }} transition={{ duration: 1, delay: 0.5 }}
-           className="h-px bg-gold mx-auto my-8"
+           initial={{ width: 0 }} animate={{ width: "6rem" }} transition={{ duration: 0.8, delay: 0.4 }}
+           className="h-px bg-blood mx-auto my-8 opacity-50"
         ></motion.div>
 
-        <p className="text-gray-400 font-mono max-w-2xl mx-auto leading-relaxed font-light">
-          Especialista en MERN y entornos Linux personalizados. 
-          Forjado en la disciplina de <span className="text-gold">Arch Linux</span>. 
-          Transformo el caos de los datos en arquitecturas elegantes.
-        </p>
+        {/* Descripción Profesional */}
+        <motion.p 
+          initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1, delay: 0.5 }}
+          className="text-gray-400 font-mono text-sm md:text-base max-w-2xl mx-auto leading-relaxed mb-10"
+        >
+          Desarrollador de software especializado en el stack <span className="text-white">MERN</span> y arquitecturas escalables.
+          
+        </motion.p>
 
-        <div className="mt-12">
-           <button className="group relative px-8 py-3 bg-transparent border border-gold text-gold font-mono hover:bg-blood hover:border-blood hover:text-white transition-all duration-300 uppercase tracking-widest text-xs">
-              <span className="relative z-10">Explorar Sistema</span>
-              <div className="absolute inset-0 bg-blood transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300 -z-0"></div>
-           </button>
-        </div>
-      </div>
+        {/* Botones de Acción */}
+        <motion.div 
+          initial={{ opacity: 0, y: 20 }} 
+          animate={{ opacity: 1, y: 0 }} 
+          transition={{ duration: 0.8, delay: 0.6 }}
+          className="flex flex-col md:flex-row gap-4 justify-center items-center"
+        >
+           {/* Botón Principal */}
+           <a href="#proyectos" className="group relative px-8 py-3 bg-blood text-white font-mono text-sm tracking-widest overflow-hidden hover:bg-[#a00000] transition-all shadow-[0_0_20px_rgba(138,0,0,0.3)] hover:shadow-[0_0_30px_rgba(138,0,0,0.6)]">
+              <span className="relative z-10 flex items-center gap-2">
+                VER PROYECTOS <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform"/>
+              </span>
+           </a>
+
+           {/* Botón Secundario (CV o Contacto) */}
+           <a href="#contacto" className="px-8 py-3 border border-gold/30 text-gold font-mono text-sm tracking-widest hover:bg-gold/10 transition-all flex items-center gap-2">
+              CONTACTAR
+           </a>
+        </motion.div>
+
+        {/* Datos Técnicos Sutiles (Footer del Hero) */}
+          </div>
     </section>
   );
 };

@@ -2,10 +2,10 @@ import React from 'react';
 
 const Projects = () => {
   return (
-    <section id="chronicles" className="py-24 px-6 relative bg-gradient-to-b from-void to-[#110000]">
+    <section id="proyectos" className="py-24 px-6 relative bg-gradient-to-b from-void to-[#110000]">
       <div className="max-w-6xl mx-auto">
         <h2 className="text-3xl font-serif text-white relative z-10 mb-20 pl-6 border-l-4 border-blood">
-          THE <span className="italic text-gold">CHRONICLES</span>
+          Mis <span className="italic text-gold">Proyectos</span>
         </h2>
 
         {/* Proyecto 1 */}

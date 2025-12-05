@@ -8,7 +8,7 @@ const Navbar = () => {
           DEV.INIT
         </div>
         <div className="hidden md:flex space-x-8 text-xs tracking-[0.2em] text-gray-400 font-mono">
-          {['PROTOCOL', 'ARSENAL', 'CHRONICLES', 'CONTACT'].map((item) => (
+          {['SOBRE MI', 'TECNOLOGIAS', 'PROYECTOS', 'CONTACTO'].map((item) => (
             <a key={item} href={`#${item.toLowerCase()}`} className="hover:text-blood transition-colors duration-300">
               {item}
             </a>

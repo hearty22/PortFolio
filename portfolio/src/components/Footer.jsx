@@ -3,7 +3,7 @@ import { Send, ExternalLink } from 'lucide-react';
 
 const Footer = () => {
   return (
-    <footer id="contact" className="py-20 px-6 border-t border-gold/20 bg-void text-center">
+    <footer id="contacto" className="py-20 px-6 border-t border-gold/20 bg-void text-center">
       <div className="max-w-2xl mx-auto">
         <h2 className="text-4xl font-serif text-white mb-2">INITIATE PROTOCOL</h2>
         <p className="text-gray-500 font-mono text-sm mb-8">¿Listo para desplegar?</p>

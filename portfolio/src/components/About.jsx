@@ -82,7 +82,7 @@ const About = () => {
               {/* LA FOTO REAL */}
               {/* Asegúrate de que tu foto esté en public/profile.jpg */}
               <img 
-                src="../../public/71af831f-f360-4ea3-8134-70574ae39da1.jpeg" 
+                src="/public/profile.jpg" 
                 alt="Profile picture of the developer" 
                 className="w-full h-full object-cover grayscale contrast-125 group-hover:grayscale-0 group-hover:contrast-100 transition-all duration-700 transform group-hover:scale-105"
               />
